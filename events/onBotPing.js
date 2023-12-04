@@ -26,7 +26,7 @@ module.exports = {
             **RAM Usage:** ${(process.memoryUsage().heapUsed / 1000000).toFixed(2)} MB
             **Discord.js Version:** ${require('discord.js').version}
             **NodeJS Version:** ${process.versions.node}
-            [Source Code]()
+            [Source Code](https://github.com/JamJestJerzy/JujunonsHQ-JS)
             `)
             .setFooter({text: "by Jerzy (dash1e)", iconURL: "https://j3rzy.dev/images/JavaScript.png"})
             .setColor("#FFDF00");
