@@ -4,7 +4,7 @@ const os = require('os');
 module.exports = {
 	name: Events.MessageCreate,
 	async execute(message) {
-        if (!message.content.includes('<@1153269776320307250>')) return; // If doesnt contain ping
+        if (!message.content.includes(`<@${message.client.user.id}>`)) return; // If doesnt contain ping
 		if (message.author.bot) return;
 
         console.log(`${message.author.username} pinged bot`)
